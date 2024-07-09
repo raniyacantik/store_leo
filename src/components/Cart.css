@@ -1,0 +1,32 @@
+.cart {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+  
+  .img-thumbnail {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .btn-outline-primary {
+    color: #1e90ff;
+    border-color: #1e90ff;
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #1e90ff;
+    color: white;
+  }
+  
+  .btn-outline-danger {
+    color: #dc3545;
+    border-color: #dc3545;
+  }
+  
+  .btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: white;
+  }

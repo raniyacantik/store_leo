@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #fbcdfc; /* Light blue background */
+}
+
+.navbar-custom {
+  background: linear-gradient(to right, #ff6ec4, #7873f5); /* Gradient warna pink dan ungu */
+  padding-top: 5px; /* Mengurangi padding atas navbar */
+  padding-bottom: 5px; /* Mengurangi padding bawah navbar */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow untuk efek naik turun */
+  transition: background-color 0.3s ease, padding 0.3s ease; /* Efek transisi warna latar dan padding */
+  position: fixed; /* Tetap di posisi fixed */
+  top: 0; /* Di bagian atas */
+  width: 100%; /* Lebar penuh */
+  z-index: 1000; /* Z-index */
+}
+
+.navbar-custom.scrolled {
+  background-color: rgba(255, 255, 255, 0.9); 
+  padding-top: 3px; 
+  padding-bottom: 3px; 
+}
+
+.navbar-brand-custom {
+  font-size: 20px; 
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand-custom .brand-purple {
+  color: #2fe2f9; 
+}
+
+.navbar-brand-custom .brand-white {
+  color: #ffffff; 
+}
+
+.logo-img {
+  width: 30px; 
+  margin-right: 5px;
+  transition: transform 0.3s ease; 
+}
+
+.logo-img:hover {
+  transform: scale(1.1); 
+}
+
+.nav-link-custom {
+  color: #fff !important; 
+  font-size: 16px; 
+  transition: color 0.3s ease, transform 0.2s ease; 
+  position: relative; 
+}
+
+.nav-link-custom::before {
+  content: ''; 
+  position: absolute; 
+  bottom: -2px; 
+  left: 0; 
+  width: 100%; 
+  height: 2px; 
+  background-color: #fff; 
+  transform: scaleX(0); 
+  transition: transform 0.3s ease; 
+}
+
+.nav-link-custom:hover::before {
+  transform: scaleX(1); 
+}
+
+.content {
+  margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand-custom {
+    font-size: 16px; 
+  }
+
+  .nav-link-custom {
+    font-size: 14px; 
+  }
+}
